@@ -40,7 +40,7 @@ namespace SalesWebMvc.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<decimal>("Amount");
+                    b.Property<double>("Amount");
 
                     b.Property<DateTime>("Date");
 
@@ -61,7 +61,7 @@ namespace SalesWebMvc.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<decimal>("BaseSalary");
+                    b.Property<double>("BaseSalary");
 
                     b.Property<DateTime>("Birthday");
 

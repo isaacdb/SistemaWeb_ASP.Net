@@ -17,7 +17,7 @@ namespace SalesWebMvc.Migrations
                     Name = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
                     Birthday = table.Column<DateTime>(nullable: false),
-                    BaseSalary = table.Column<decimal>(nullable: false),
+                    BaseSalary = table.Column<double>(nullable: false),
                     DepartmentId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -38,7 +38,7 @@ namespace SalesWebMvc.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Date = table.Column<DateTime>(nullable: false),
-                    Amount = table.Column<decimal>(nullable: false),
+                    Amount = table.Column<double>(nullable: false),
                     Status = table.Column<int>(nullable: false),
                     SellerId = table.Column<int>(nullable: true)
                 },
